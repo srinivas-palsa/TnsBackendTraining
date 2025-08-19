@@ -102,7 +102,7 @@ public class ArrayPrograms{
 
 
 
-// 5.Second largest element
+/// 5.Second largest element
 
 public class ArrayPrograms{
 	
