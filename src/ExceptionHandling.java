@@ -1,3 +1,5 @@
+/*
+// Using single catch block
 
 public class ExceptionHandling {
 
@@ -20,4 +22,42 @@ public class ExceptionHandling {
 
 	}
 
+}
+
+*/
+
+
+
+// Using multiple catch blocks
+
+public class ExceptionHandling{
+	
+	public static void main(String args[]) {
+		
+		try {
+			
+			int x = 7/5;
+			System.out.println("The result is: "+x);
+			
+			int arr[]= new int[5];
+			arr[6] = 12;
+			System.out.println("The resultant array is: "+arr[4]);
+			
+		}
+		
+		catch(ArithmeticException ae) {
+			
+			System.err.println("You cannot divide a number by Zero..."
+					+ "Please change the value");
+		}
+		
+		catch(ArrayIndexOutOfBoundsException ex) {
+			
+			System.err.println("The defined index is not valid"
+					+ "Please enter a valid index");
+			
+		}
+		
+		
+}
 }
