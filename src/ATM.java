@@ -24,7 +24,7 @@ public class ATM {
 		}
 		else {
 			double x = AccountBalance-WithdrawalAmount;
-			System.out.println(x+"is your remaining balance");
+			System.out.println(x+" is your remaining balance");
 		}
 	}
 	
