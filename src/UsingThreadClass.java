@@ -1,7 +1,7 @@
 // Demo for multi threading 
 public class UsingThreadClass extends Thread{
 	
-	void run(int num) {
+	public synchronized void multiplication(int num) {
 		
 		for(int i=0; i<=5; i++) {
 		

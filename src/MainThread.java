@@ -5,12 +5,20 @@ public class MainThread {
 		
 		UsingThreadClass obj = new UsingThreadClass();
 		
-		Using2ndThreadClass obj2 = new Using2ndThreadClass();
+		Thread t1 = new Thread() {
+			public void run() {
+				obj.multiplication(5);
+				
+			}
+		};
 		
-		obj.start();
-		obj2.start();
-		obj.run(5);
-		obj2.running(3);
+		Thread t2 = new Thread() {
+			public void run() {
+				obj.multiplication(3);
+			}
+		};
+		t1.start();
+		t2.start();
 		
 	}
 }
