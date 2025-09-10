@@ -1,6 +1,6 @@
 package com.tnsif.MultiThreading;
 
-// Demo for multi threading 
+// Demo for multithreading 
 public class UsingThreadClass extends Thread{
 	
 	public synchronized void multiplication(int num) {
