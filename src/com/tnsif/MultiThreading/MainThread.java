@@ -14,7 +14,7 @@ public class MainThread {
 		
 		Thread t2 = new Thread() {
 			public void run() {
-				obj.multiplication(3);
+				obj.multiplication(4);
 			}
 		};
 		t1.start();
