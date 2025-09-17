@@ -31,8 +31,14 @@ public class JdbcDemo2 {
 		
 		String query2 = "insert into employee values(105,'Mahesh',700000)";
 		PreparedStatement pst = con.prepareStatement(query2);
-		pst.execute();
+		//pst.execute();
 		System.out.println("One new row added");
+		
+		String query3 = "UPDATE studentids SET sid=102 WHERE sname='Abhilash'";
+		PreparedStatement pdstmt2 = con.prepareStatement(query3);
+		pdstmt2.executeUpdate();
+		System.out.println("One row updated");
+
 		
 		
 //		Step 4--> Executing the query 
@@ -49,3 +55,7 @@ public class JdbcDemo2 {
 	}
 
 }
+
+
+
+
